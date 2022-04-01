@@ -42,6 +42,7 @@ public class BaseErrorController implements ErrorController {
         );
     }
 
+    //api에서 error 발생시, view로 에러보여주고 싶지 않음
     @RequestMapping("/error")
     public ResponseEntity<APIErrorResponse> error(HttpServletResponse response) {
         HttpStatus status = HttpStatus.valueOf(response.getStatus());
