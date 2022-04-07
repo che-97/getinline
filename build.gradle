@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.eun'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '15'
+sourceCompatibility = '18'
 
 configurations {
 	compileOnly {
@@ -30,3 +30,4 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
